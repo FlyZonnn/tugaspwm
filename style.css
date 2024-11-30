@@ -1,0 +1,235 @@
+/* Reset dasar */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input dan Tombol */
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.input-line {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  outline: none;
+  width: 70%;
+  font-size: 16px;
+}
+
+.input-line:hover {
+  border-bottom: 2px solid skyblue;
+  transition: border-bottom 0.3s ease;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: skyblue;
+  transition: 0.3s ease;
+}
+
+
+/* List Item */
+.list-container {
+  width: 450px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#itemList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#itemList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-text {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.menu-dots {
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+  background: none;
+}
+
+.checkbox {
+  transform: scale(1.2);
+}
+
+/* Menu dropdown */
+.menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 10px;
+  top: 30px;
+  right: 10px;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background-color: #f4f4f4;
+}
+
+/* Posisi relatif untuk menempatkan menu dropdown */
+.list-item {
+  position: relative;
+}
+
+
+
+/* Styling untuk footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  button {
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+  }
+
+  .list-container {
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .input-box button:hover {
+    background-color: skyblue;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 520px;
+        margin-bottom: 20px;
+      }
+  
+      button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .list-container {
+        width: 550px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+  .input-box button:hover {
+    background-color: red;
+  }
+  }
+
+/* @media (min-width: 771px) {
+    .input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 450px;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .list-container {
+        width: 450px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+  .input-box button:hover {
+    background-color: red;
+  }
+} */
